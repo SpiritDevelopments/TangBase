@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>単語帳アプリdemo</title>
+    </head>
+    <body>
+        <table width="100%">
+            <tr><td align="center" bgcolor="#2b1872">
+                <font color="ffffff"><b>LOGIN</b></font>
+            </td></tr></table><br />
+            Please enter your ID and PASSWORD.<br />
+            <br />
+            <form name="Login" action="/login" method="post">
+                <table><tr>
+                    <td>user ID</td>
+                    <td>
+                        <input type="text" name="userid" size="40" maxlength="32" autocomplete="OFF" />
+                    </td>
+                </tr><tr>
+                    <td>PASSWORD</td>
+                    <td>
+                        <input type="password" name="pass" size="40" maxlength="32" autocomplete="OFF" />
+                    </td></tr>
+            </table>
+            <br />
+            <input type="submit" value="LOGIN" />
+            </form>
+    </body>
+</html>
