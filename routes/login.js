@@ -25,7 +25,8 @@ router.post('/',(req,res) => {
     }
     logger.debug('from:login to:index redirect');
     /* session */
-    req.session.userid = userid;
+    req.cookies.userid = userid;
+    logger.debug('cookie.userid:' + req.cookies.userid);
     res.redirect('/');
 });
 

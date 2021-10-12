@@ -15,7 +15,8 @@ app.use(session);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  if(!req.session.cookie.userid){
+  logger.debug('index.js userid:' + req.cookies.userid);
+  if(!req.cookies.userid){
     logger.debug('from:index to:login redirect')
     res.redirect(req.baseUrl+'/login');
   }
